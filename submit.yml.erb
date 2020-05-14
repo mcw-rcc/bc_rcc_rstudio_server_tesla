@@ -1,0 +1,10 @@
+---
+batch_connect:
+  template: "basic"
+script:
+  email: <%= ENV["USER"] %>@mcw.edu
+  native:
+    resources:
+      nodes: "1:ppn=1:gpus=1"
+      mem: "5gb"
+      feature: "<%= node_type %>"
