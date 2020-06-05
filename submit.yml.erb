@@ -5,6 +5,6 @@ script:
   email: <%= ENV["USER"] %>@mcw.edu
   native:
     resources:
-      nodes: "1:ppn=1:gpus=1"
-      mem: "5gb"
+      nodes: "1:ppn=2:gpus=1"
+      mem: "10gb"
       feature: "<%= node_type %>"

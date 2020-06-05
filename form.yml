@@ -8,8 +8,7 @@ form:
   - bc_num_hours
   - bc_email_on_started
 attributes:
-  Rserver: "rstudio-server/1.2.5042"
-  Rapp: "R/3.5.0"
+  Rserver: "rstudio-server/1.3.959"
   bc_num_hours: 
     min: 1
     max: 8
@@ -21,8 +20,14 @@ attributes:
     widget: select
     label: "Node type"
     help: |
-      - **NVIDIA Tesla K40 GPU** - (*1 core, 5GB memory, 1 K40 GPU*) Use a Tesla K40 cluster node.
-      - **NVIDIA Tesla K80 GPU** - (*1 core, 5GB memory, 1 K80 GPU*) Use a Tesla K80 cluster node. 
+      - **NVIDIA Tesla K40 GPU** - (*2 core, 10GB memory, 1 K40 GPU*) Use a Tesla K40 cluster node.
+      - **NVIDIA Tesla K80 GPU** - (*2 core, 10GB memory, 1 K80 GPU*) Use a Tesla K80 cluster node. 
     options:
       - [ "NVIDIA Tesla K40 GPU", "k40" ]
       - [ "NVIDIA Tesla K80 GPU", "k80" ]
+  Rapp:
+    widget: select
+    label: "R Version"
+    options:
+      - [ "3.5.0", "R/3.5.0" ]
+      - [ "4.0.0", "R/4.0.0" ]

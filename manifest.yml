@@ -1,5 +1,5 @@
 ---
-name: RStudio Server
+name: RStudio Server Test
 category: Interactive Apps
 subcategory: Tesla GPU Cluster
 role: batch_connect
@@ -8,3 +8,12 @@ description: |
 
   [RStudio Server]: https://www.rstudio.com/products/rstudio-server/
   [R]: https://www.r-project.org/
+
+  <div class="alert alert-info" >
+    <strong>Recent updates</strong>
+    <ul>
+      <li>Updated to RStudio Server 1.3.959.</li>
+      <li>Added R 4.0.0.</li>
+      <li>Updated per job resources.</li>
+    </ul>
+  </div>
